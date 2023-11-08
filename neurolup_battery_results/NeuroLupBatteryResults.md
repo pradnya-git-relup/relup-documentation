@@ -462,7 +462,7 @@ The exercise is divided into two trials, as follows:
      ![Exercise 5 - Screen 8](images/exercise05/exercise05_screen8.PNG)
 
 #### Response data
-[WorkInProgress] // ToDo: Discuss the specifics with the developer and update this information if required
+[WorkInProgress] This may change if required
 
 Response data for this exercise includes the following:
 - The device display size
