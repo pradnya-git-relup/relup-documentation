@@ -25,7 +25,7 @@
 <a id="sec-introduction"></a>
 ## Introduction
 
-NeuroLup currently offers 12 distinct neuropsychological exercises. NeuroLup also provides the flexibility to create custom test batteries by selecting any combination of these exercises. When a participant successfully finishes a battery, the system generates a comprehensive battery result. This battery result is a collection of results for exercises available within that specific battery.
+NeuroLup offers various cognitive assessments, known coloquially as "brain games" or "cognitive exercises". NeuroLup also provides the flexibility to create custom test batteries by selecting any combination of these exercises. When a participant successfully finishes a battery, the system generates a comprehensive battery result. This battery result is a collection of results for exercises available within that specific battery.
 
 A battery result is represented using a JSON object. The following is an example of a battery result:
 
@@ -105,7 +105,7 @@ It is important to emphasize that the primary goal of this document is to provid
 ### Exercise 1: 30 Sec Speech
 
 #### Overview
-In this exercise, participants are required to read a short paragraph aloud. If there are colored words in the paragraph, participants should say the color, not the word.
+In this exercise, participants are required to read a short paragraph aloud. If there are colored words in the paragraph, participants should say the color, not the word. The Stroop effect is included primarily to divert attention away from articulation, aiding to unmask any speech difficulties otherwise attenuated with concentration. 
 
 The exercise process is outlined as follows:
 1. Instructions for the exercise are displayed. Participants can click the "Next" button to proceed.
@@ -150,7 +150,7 @@ This object contains the result using the following fields:
 <a id="subsec-exercise02"></a>
 ### Exercise 2: Say “Ah”
 #### Overview
-In this exercise, participants are required to vocalize the sound "Ah" continuously for a duration of 5 seconds.
+In this exercise, participants are required to vocalize the sound "Ah" continuously for a duration of 5 seconds. Sustained intonation has been utilized as a language-agnostic indicator of movement disorders. 
 
 The exercise process is outlined as follows:
 1. Instructions for the exercise are displayed. Participants can click the "Start recording" button to record a response.
@@ -192,6 +192,11 @@ This object contains the result using the following fields:
 ### Exercise 3: Grid Match
 #### Overview
 In this exercise, participants are presented with a 3x3 grid where images are placed in various cells. Their task is to replicate this image arrangement on the grid within a specified time frame. The exercise is divided into three distinct trials, each progressively more challenging. The table below outlines the number of questions, the number of images per question, and the time limit per question for each trial.
+
+This is a measure of visual working memory. There is evidence that APOE ε4 carriers perform better than non-carriers in certain visual working memory tasks. There is evidence that individuals with MCI have reduced hippocampal activation during high working memory load and increased hippocampal activation during low load in comparison to healthy controls. This effect may be captured as this exercises becomes more challenging in trials 2 and 3.
+
+
+
 
 | Trial | Number of Questions | Images per Question | Time Limit per Question |
 |-------|---------------------|---------------------|-------------------------|
@@ -387,7 +392,7 @@ This object contains the result using the following fields:
 
 #### Overview
 
-In this exercise, participants are expected to tap a button as many times as they can within a 10-second time interval using their right or left index finger.
+In this exercise, participants are expected to tap a button as many times as they can within a 10-second time interval using their right or left index finger. This is a measure of neuropsychomotor speed. Performance abnormalities in this exercises area associated with many diseases and disorders, such as MCI, pMCI and AD.
 
 The exercise process is outlined as follows:
 1. Exercise instructions are displayed. Participants can click the "Start" button to begin the exercise.
@@ -439,7 +444,7 @@ This object contains the result using the following fields:
 <a id="subsec-exercise05"></a>
 ### Exercise 5: Tracing of a Line
 #### Overview
-In this exercise, participants are expected to trace a reference line on the screen using either their right or left hand in the specified direction.
+In this exercise, participants are expected to trace a reference line on the screen using either their right or left hand in the specified direction. This is a simple measure to quantify motor control and stability. 
 
 The exercise is divided into two trials, as follows:
 1. Trial 1 (Using the left hand):
@@ -523,7 +528,7 @@ This object contains the result using the following fields:
 ### Exercise 6: DSST
 
 #### Overview
-In this exercise, participants are shown a reference set of symbols on the screen with a random number associated with each image. For each question in the exercise, a random symbol from the set is displayed on the screen. Participants are presented with the available number options used for the reference set and are expected to select the number that corresponds to the symbol in the reference set. Participants have 90 seconds to complete this task for as many symbols as possible.
+In this exercise, participants are shown a reference set of symbols on the screen with a random number associated with each image. For each question in the exercise, a random symbol from the set is displayed on the screen. Participants are presented with the available number options used for the reference set and are expected to select the number that corresponds to the symbol in the reference set. Participants have 90 seconds to complete this task for as many symbols as possible. Low scores on the DSST are associated with AD, Parkinson's disease, stroke, disability and depression among other disordres. 
 
 The exercise process is outlined as follows:
 1. Exercise instructions are displayed. Participants can watch a demo with the "Watch Demo" button or click the "Start" button to begin the exercise.
@@ -566,7 +571,7 @@ Contains the answers to the exercise questions (values 1 = correct answer, 0 = i
 <a id="subsec-exercise07"></a>
 ### Exercise 7: Stroop Test
 #### Overview
-This exercise is divided into three trials. For each trial, participants are expected to tap a checkmark or a cross symbol based on the instructions displayed on the screen. Questions across all trials use words that represent color names (for example: red, green, blue). The words themselves are colored. However, the color of a word may or may not match the word itself.
+This exercise is divided into three trials. For each trial, participants are expected to tap a checkmark or a cross symbol based on the instructions displayed on the screen. Questions across all trials use words that represent color names (for example: red, green, blue). The words themselves are colored. However, the color of a word may or may not match the word itself. Evidence exists linking head trauma and AD to increased Stroop effect. 
 
 The following is a brief introduction of the instructions for the three trials:
 - Trial 1:
@@ -707,7 +712,7 @@ This object contains the result using the following fields:
 
 #### Overview
 
-In this exercise, participants are presented with a picture and asked to describe what is happening in the picture in detail within a 5-minute time limit. A random picture from a set of pictures is used every time.
+In this exercise, participants are presented with a picture and asked to describe what is happening in the picture in detail within a 5-minute time limit. A random picture from a set of pictures is used every time. Picture description tasks can be used to analyze both the acoustic and linguistic features of speech, providing insight into one's cognitive health.
 
 The exercise process is outlined as follows:
 1. Exercise instructions are displayed. Participants can click "Start game" to start the exercise.
@@ -751,7 +756,7 @@ This object contains the result using the following fields:
 ### Exercise 9: Unstructured voice tasks (Verbal fluency)
 
 #### Overview
-In this exercise, participants asked to say as many unique words as possible for a given category within a 1-minute time limit.
+In this exercise assessing verbal fluenncy, participants asked to say as many unique words as possible for a given category within a 1-minute time limit.
 
 The exercise process is outlined as follows:
 1. Exercise instructions are displayed. Participants can click "Start game" to start the exercise.
